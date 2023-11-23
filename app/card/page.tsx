@@ -16,9 +16,11 @@ export default function Home() {
     const cards: { id: number; name: string; title: string }[] = [];
 
     for (let i = 1; i < 26; i++) {
-        const card = searchParams.get('b' + i)
-        cards.push(items[card]);
-    }
+        const card = searchParams.get('b' + i);
+        if (card) {
+          cards.push(items[parseInt(card)]);
+        }
+      }
 
     return (
         <div className="flex flex-col items-center justify-center h-full w-full gap-4">
