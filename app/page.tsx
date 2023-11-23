@@ -1,12 +1,6 @@
 'use client';
 import { BingoCardGrid } from "@/components/ui/bingo-card-grid";
 import { Button } from "@/components/ui/button";
-import {
-    Tooltip,
-    TooltipContent,
-    TooltipProvider,
-    TooltipTrigger,
-} from "@/components/ui/tooltip";
 import items from "@/api/items.json";
 import { useState } from "react";
 import Link from "next/link";
