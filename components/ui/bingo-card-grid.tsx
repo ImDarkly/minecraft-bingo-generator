@@ -52,7 +52,7 @@ export const BingoCardGrid = ({ cards }: BingoCardGridProps) => {
                 >
                     <Image
                         key={id}
-                        src={`/textures/${name}.png`}
+                        src={`/minecraft-bingo-generator/textures/${name}.png`}
                         alt={`${title}`}
                         width={72}
                         height={72}
