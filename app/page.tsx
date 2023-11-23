@@ -13,7 +13,7 @@ export default function Home() {
     const cards: { id: number; name: string; title: string }[] = [];
 
     for (let i = 0; i < 25; i++) {
-        const randomNum = rand(0, 395);
+        const randomNum = rand(0, 394);
         cards.push(items[randomNum]);
     }
 
