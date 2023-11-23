@@ -1,5 +1,5 @@
 1:HL["/minecraft-bingo-generator/_next/static/css/8aff7595bd520de9.css","style",{"crossOrigin":""}]
-0:["EGSG8n4Mt1Gnm-wYSMCT4",[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/minecraft-bingo-generator/_next/static/css/8aff7595bd520de9.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+0:["5r5Bcd5aFzWQ-Rfd6R5KM",[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/minecraft-bingo-generator/_next/static/css/8aff7595bd520de9.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:I[1815,["185","static/chunks/app/layout-3449de271f6ff6f0.js"],"ThemeProvider"]
 5:I[6954,[],""]
 6:I[7264,[],""]
