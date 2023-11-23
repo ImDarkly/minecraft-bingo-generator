@@ -24,7 +24,7 @@ export default function Home() {
         }
     }
     return (
-        <div className="flex flex-col items-center h-full w-full">
+        <div className="flex flex-col items-center py-4 h-full w-full">
             <div className="flex py-4 gap-2">
                 <ModeToggle />
                 <Link href={"/"}>
