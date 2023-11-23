@@ -1,12 +1,6 @@
 'use client';
 import { BingoCardGrid } from "@/components/ui/bingo-card-grid";
 import { Button } from "@/components/ui/button";
-import {
-    Tooltip,
-    TooltipContent,
-    TooltipProvider,
-    TooltipTrigger,
-} from "@/components/ui/tooltip";
 import items from "@/api/items.json";
 import { useState } from "react";
 import Link from "next/link";
@@ -32,7 +26,7 @@ export default function Home() {
             <BingoCardGrid cards={cards}/>
             <div className="flex flex-col gap-2">
                 <Button onClick={ refreshPage }>Generate</Button>
-                <Link href={`http://localhost:3000/card?${Array.from({ length: 25 }, (_, index) => `b${index + 1}=${cards[index].id}`).join('&')}`}>
+                <Link href={`https://imdarkly.github.io/minecraft-bingo-generator/card?${Array.from({ length: 25 }, (_, index) => `b${index + 1}=${cards[index].id}`).join('&')}`}>
                     <Button variant={"outline"}>Open Bingo card</Button>
                 </Link>
             </div>
