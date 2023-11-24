@@ -59,7 +59,7 @@ export default function Home() {
                     >
                         Copy
                     </Button>
-                    <Link href={"/minecraft-bingo-generator"} className="w-full">
+                    <Link href={"/"} className="w-full">
                         <Button variant={"outline"} className="w-full">
                             Go back
                         </Button>
