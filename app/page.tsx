@@ -53,8 +53,8 @@ export default function Home() {
                         ).join("&")}`}
                     >
                         <Button variant={"outline"}>Open Bingo card</Button>
-                        <Button variant={"ghost"} onClick={copyLinkToClipboard} >Copy Bingo card</Button>
                     </Link>
+                    <Button variant={"ghost"} onClick={copyLinkToClipboard} >Copy Bingo card</Button>
                 </div>
             </div>
         </div>
