@@ -52,9 +52,9 @@ export default function Home() {
                             (_, index) => `b${index + 1}=${cards[index].id}`
                         ).join("&")}`}
                     >
-                        <Button variant={"outline"}>Open Bingo card</Button>
+                        <Button variant={"outline"}>Open</Button>
                     </Link>
-                    <Button variant={"ghost"} onClick={copyLinkToClipboard} >Copy Bingo card</Button>
+                    <Button variant={"ghost"} onClick={copyLinkToClipboard} >Copy</Button>
                 </div>
             </div>
         </div>
