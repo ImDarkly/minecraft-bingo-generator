@@ -52,18 +52,7 @@ export default function Home() {
                     height={80}
                 />
                 <BingoCardGrid cards={cards} />
-                <div className="flex items-center flex-col gap-2 w-full">
-                    <Button
-                        onClick={copyLinkToClipboard}
-                        className="w-full"
-                    >
-                        Copy
-                    </Button>
-                    <Link href={"/"} className="w-full">
-                        <Button variant={"outline"} className="w-full">
-                            Go back
-                        </Button>
-                    </Link>
+                <div className="flex items-center flex-col gap-2 w-full h-20">
                 </div>
             </div>
         </div>
