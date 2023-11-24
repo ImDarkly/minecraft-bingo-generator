@@ -14,12 +14,25 @@ export default function Home() {
 
     const cards: { id: number; name: string; title: string }[] = [];
 
+    const copyLinkToClipboard = () => {
+        const bingoCardLink = `https://imdarkly.github.io/minecraft-bingo-generator/card?${Array.from(
+            { length: 25 },
+            (_, index) => `b${index + 1}=${cards[index].id}`
+        ).join("&")}`;
+
+        navigator.clipboard.writeText(bingoCardLink).then(() => {
+            console.log("Bingo card link copied to clipboard!");
+        }).catch((error) => {
+            console.error("Failed to copy link to clipboard:", error);
+        });
+    };
+
     for (let i = 0; i < 25; i++) {
         const randomNum = rand(0, 394);
         cards.push(items[randomNum]);
     }
 
-    function refreshPage() {
+    function generateCards() {
         window.location.reload();
     }
 
@@ -32,14 +45,14 @@ export default function Home() {
                 <Image src={"/minecraft-bingo-generator/textures/logo.png"} alt="Bingo Logo" width={320} height={80} />
                 <BingoCardGrid cards={cards} />
                 <div className="flex flex-col gap-2">
-                    <Button onClick={refreshPage}>Generate</Button>
+                    <Button onClick={generateCards}>Generate</Button>
                     <Link
                         href={`https://imdarkly.github.io/minecraft-bingo-generator/card?${Array.from(
                             { length: 25 },
                             (_, index) => `b${index + 1}=${cards[index].id}`
                         ).join("&")}`}
                     >
-                        <Button variant={"outline"}>Open Bingo card</Button>
+                        <Button onClick={copyLinkToClipboard} variant={"outline"}>Open Bingo card</Button>
                     </Link>
                 </div>
             </div>

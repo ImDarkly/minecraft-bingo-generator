@@ -48,7 +48,7 @@ export const BingoCardGrid = ({ cards }: BingoCardGridProps) => {
                         outline-2 
                         transition-all 
                         hover:scale-105
-                        ${selectedCards.includes(id) ? "outline-green-500 hover:outline-offset-0 outline-offset-[-2px]" : "hover:outline-blue-500 outline-offset-0"}`}
+                        ${selectedCards.includes(id) ? "outline-green-600 dark:hover:outline-green-500 hover:outline-offset-0 outline-offset-[-2px]" : "hover:outline-blue-600 dark:hover:outline-blue-500 outline-offset-0"}`}
                     onClick={() => handleCardClick(id)}
                 >
                     <Image
@@ -59,7 +59,7 @@ export const BingoCardGrid = ({ cards }: BingoCardGridProps) => {
                         height={72}
                         className="bingo-item p-2 object-cover brightness-110 group-hover:scale-150 transition-all"
                     />
-                    <div className="opacity-0 invisible absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 break-words text-center cursor-pointer bg-slate-200 dark:bg-slate-900 w-full h-full group-hover:visible group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <div className="opacity-0 invisible absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 break-words text-center cursor-pointer bg-slate-300 dark:bg-slate-900 w-full h-full group-hover:visible group-hover:opacity-100 transition-opacity flex items-center justify-center">
                         <div key={id} className="dark:text-slate-100 text-slate-800 text-xs">
                             {title}
                         </div>
