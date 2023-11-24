@@ -44,7 +44,7 @@ export default function Home() {
             <div className="flex flex-col items-center justify-center h-full w-full gap-8">
                 <Image src={"/minecraft-bingo-generator/textures/logo.png"} alt="Bingo Logo" width={320} height={80} />
                 <BingoCardGrid cards={cards} />
-                <div className="flex flex-col gap-2">
+                <div className="flex items-center flex-col gap-2">
                     <Button onClick={generateCards}>Generate</Button>
                     <Link
                         href={`https://imdarkly.github.io/minecraft-bingo-generator/card?${Array.from(
