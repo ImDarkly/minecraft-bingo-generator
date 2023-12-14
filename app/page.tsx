@@ -37,7 +37,7 @@ export default function Home() {
                 />
                 <BingoCardGrid cards={cards} />
                 <div className="flex items-center flex-col gap-2 w-full">
-                    <Button onClick={generateCards} className="w-full rounded-full bg-sky-500 hover:brightness-95 active:scale-95 transition-transform">
+                    <Button onClick={generateCards} className="w-full rounded-full bg-blue-500 hover:brightness-95 hover:bg-blue-500/90 active:scale-95 transition-transform">
                         Generate
                     </Button>
                     <Link
