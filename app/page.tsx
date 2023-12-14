@@ -37,7 +37,7 @@ export default function Home() {
                 />
                 <BingoCardGrid cards={cards} />
                 <div className="flex items-center flex-col gap-2 w-full">
-                    <Button onClick={generateCards} className="w-full rounded-full bg-red-400 active:scale-95">
+                    <Button onClick={generateCards} className="w-full rounded-full bg-sky-500 hover:brightness-95 active:scale-95 transition-transform">
                         Generate
                     </Button>
                     <Link
@@ -47,7 +47,7 @@ export default function Home() {
                         ).join("&")}`}
                         className="w-full"
                     >
-                        <Button variant={"outline"} className="w-full rounded-full active:scale-95">
+                        <Button variant={"outline"} className="w-full rounded-full active:scale-95 transition-transform">
                             Open
                         </Button>
                     </Link>
